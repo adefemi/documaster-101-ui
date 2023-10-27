@@ -3,7 +3,7 @@ import { toast } from "react-toastify";
 
 const Inquire = ({ endpoint }: { endpoint: string }) => {
   const [loading, setLoading] = useState(false);
-  const [answer, setAns] = useState<any>("Hello world");
+  const [answer, setAns] = useState<any>(null);
 
   const handleSubmit = async (e: any) => {
     e.preventDefault();

@@ -22,7 +22,7 @@ const ListPDF = ({ endpoint }: { endpoint: string }) => {
         <div className="mt-4">
           <p>Loading...</p>
         </div>
-      ) : (
+      ) : pdfs.length < 1 ? <p>No document yet</p> : (
         <ul className="mt-4 list-disc pl-5 grid grid-cols-3 gap-3">
           {pdfs.map((pdf: any, i: number) => (
             <li className="font-roboto" key={i}>{pdf}</li>
