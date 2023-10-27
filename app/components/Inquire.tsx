@@ -14,6 +14,9 @@ const Inquire = ({ endpoint }: { endpoint: string }) => {
     if (pdfNames) {
       pdfNames = pdfNames.split(",");
     }
+    else{
+        pdfNames = []
+    }
 
     const formdata = {
         question: e.target.question.value,
